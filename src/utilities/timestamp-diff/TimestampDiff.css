@@ -1,0 +1,88 @@
+.timestamp-diff .moment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.timestamp-diff .moment-input h4 {
+  margin: 0 0 0.75rem 0;
+}
+
+.timestamp-diff .field-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.timestamp-diff .field-row label {
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.timestamp-diff input[type='text'],
+.timestamp-diff input[type='datetime-local'] {
+  flex: 1 1 180px;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--input-bg);
+  color: inherit;
+  font-size: 1rem;
+}
+
+.timestamp-diff .unit-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.timestamp-diff .unit-toggle button {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.timestamp-diff .unit-toggle button.active {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.timestamp-diff .diff-summary {
+  font-size: 1.05rem;
+  margin: 0 0 1rem 0;
+}
+
+.timestamp-diff .result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.timestamp-diff .result-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: var(--panel-bg);
+}
+
+.timestamp-diff .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-color);
+}
+
+.timestamp-diff code {
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.timestamp-diff .error {
+  color: var(--error-color);
+}
